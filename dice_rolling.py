@@ -1,3 +1,1 @@
-
-
-choice = input('Roll the dice (y/n): ').lower
+choice = input('Roll the dice (y/n): ').lower()
