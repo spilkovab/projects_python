@@ -11,7 +11,8 @@ def main():
         "dice": "dice_rolling.py",
         "number": "number_guessing.py",
         "trivia": "trivia_game.py",
-        "rps": "rock_paper_scissors.py"
+        "rps": "rock_paper_scissors.py",
+        "maty": "maty.py"
     }
 
     game = input('Available games:\n'
@@ -19,6 +20,7 @@ def main():
                 'Number guessing (number)\n'
                 'Trivia game (trivia)\n'
                 'Rock, paper, scissors (rps)\n'
+                'Casino slots (maty)\n'
                 'Please select a game: ').lower()
 
     if game in games:
