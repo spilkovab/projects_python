@@ -39,4 +39,5 @@ if __name__ == '__main__':
         con = input('Choose another game? (y/n): ').lower()
 
         if con == 'n':
+            print('Goodbye :(')
             break
