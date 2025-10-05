@@ -1,4 +1,8 @@
 ### Small python projects
 
-- dice rolling
-- number guessing
+Games:
+- Dice rolling
+- Number guessing
+- Trivia game
+- Rock, paper, scissors
+- Casino slots
