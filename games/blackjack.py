@@ -48,7 +48,6 @@ deck = [
 
 random.shuffle(deck)
 
-
 def count_points(hand):
     points = sum(card.points for card in hand)
 
@@ -98,7 +97,7 @@ def main(deck):
     print('        WELCOME TO BLACKJACK        ')
     print('************************************')
     print()
-
+    
     while balance>0:
         flag_end_game = False
         # User bet
@@ -129,7 +128,7 @@ def main(deck):
         print(f'Dealer: {dealer[0].name}{dealer[0].emoji} [Hidden card]')
 
         while user_turn:
-            user_move = input('What is your next move? HIT(h) / STAND(s) / DOUBLE(d): ').lower()
+            user_move = input('What is your next move? HIT (h) / STAND (s) / DOUBLE (d): ').lower()
 
             if user_move=='h':
                 user.append(deck.pop())
