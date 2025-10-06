@@ -1,17 +1,22 @@
 import random
+import time
 
 def spin_row():
     # Define symbols
     symbols = ['🍒', '🍉', '🍋', '🍓', '⭐']
     
-    # Define row
-    return [random.choice(symbols) for _ in range(3)] # for every iterarion (_) in range(3), pick a random symbol
+        # Animate spinning
+    for _ in range(15):  # number of spin frames
+        row = [random.choice(symbols) for _ in range(3)]
+        print(f'\r{" | ".join(row)}', end='', flush=True)
+        time.sleep(0.15)
 
-def print_row(row):
-    # Print row
-    print('**********************')
-    print("   |   ".join(row))
-    print('**********************')
+    # Final result
+    final_row = [random.choice(symbols) for _ in range(3)]
+    print(f'\r{" | ".join(final_row)}', flush=True)
+    print()
+    return final_row
+    
 
 def get_payout(row, bet):  
     # Check if all symbols are the same
@@ -66,10 +71,9 @@ def main():
         # Substract bet from balance
         balance -= bet
         # Spin row
+        print('Spinning...\n') 
         row = spin_row()
-        print('Spinning...\n')
-        # Print row
-        print_row(row)
+
         # Get payout
         payout = get_payout(row,bet)
         # Info message
