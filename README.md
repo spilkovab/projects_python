@@ -6,3 +6,5 @@ Games:
 - Trivia game
 - Rock, paper, scissors
 - Casino slots
+- Black jack
+
