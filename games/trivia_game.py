@@ -27,4 +27,5 @@ def trivia():
         
         print(f"Game over! Your score is {score}/{total_questions}")
 
-trivia()
+if __name__=='__main__':
+    trivia()
